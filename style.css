@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+body, input, button {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head-bar {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.input-section {
+    padding: 16px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#inputBook {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section > form > .input {
+    margin: 8px 0;
+}
+
+.input-section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input-section > form > .input-inline {
+    margin: 12px 0;
+}
+
+.input-section > form > .input-inline > label {
+    margin-right: 10px;
+}
+
+.input-section > form > button {
+    margin: 0 auto;
+    color: white;
+    border: 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-section > form > button:hover{
+    color: black;
+    background-color: white;
+}
+
+.search-section {
+    margin: 16px 0;
+    padding: 16px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.search-section > form {
+    padding: 16px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search-section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search-section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-section > form > button {
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-section > form > button:hover {
+    background-color: white;
+    color: black;
+}
+
+.book-shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid white;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book-shelf > .book-list {
+    padding: 16px 0;
+}
+
+.book-shelf > .book-list > .book-item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.book-shelf > .book-list > .book-item > h3, p {
+    margin: 8px 0;
+}
+
+.book-shelf > .book-list > .book-item > .action > button {
+    border: 1px solid white;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-shelf > .book-list > .book-item > .action > button:hover {
+    background-color: white;
+    color: black;
+}
+
+#searchBookContainer > .book-item {
+    padding: 16px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#searchBookContainer > .book-item > p{
+    margin: 8px 0;
+    font-weight: normal;
+}
