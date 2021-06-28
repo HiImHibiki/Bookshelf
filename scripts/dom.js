@@ -181,6 +181,14 @@ function makeFindBook(book) {
  
     const textTimestamp = document.createElement("p");
     textTimestamp.innerText = "Year: " + book.year;
+
+    const status = document.createElement("p");
+    if (book.isCompleted) {
+        status.innerText = "Status: Completed";
+    }
+    else {
+        status.innerText = "Status: Incomplete";
+    }
  
     const textContainer = document.createElement("article");
     textContainer.classList.add("book-item")
